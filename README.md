@@ -21,7 +21,7 @@ dependencies {
 ```
 
 ### Step2: Create a new class for the Model
-```JAVA
+```Kotlin
 class MyData(
         var no: String,
         var name: String
@@ -41,7 +41,7 @@ class MainRepository {
 ```
 
 ### Step3: Create a new class for the ViewModel
-```JAVA
+```Kotlin
 class MainViewModel : ViewModel() {
     val mData = MutableLiveData<List<MyData>>()
     val mIsLoading = MutableLiveData<Boolean>(false)
@@ -59,7 +59,7 @@ class MainViewModel : ViewModel() {
 ```
 
 ### Step4: Create the View class
-```JAVA
+```Kotlin
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
